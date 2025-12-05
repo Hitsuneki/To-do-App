@@ -91,7 +91,3 @@ Prevents function recreation on every render, optimizing child component perform
 - **useMemo**: Filters are only recalculated when todos or filter type changes
 - **useCallback**: Event handlers maintain referential equality across renders
 - **Proper dependencies**: All hooks have correct dependency arrays
-
-## License
-
-MIT
