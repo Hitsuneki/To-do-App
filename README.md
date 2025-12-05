@@ -75,32 +75,6 @@ const addTask = useCallback(() => {
 ```
 Prevents function recreation on every render, optimizing child component performance.
 
-## Project Structure
-
-```
-app/
-├── context/
-│   └── ThemeContext.tsx    # Global theme provider with useContext
-├── globals.css             # Tailwind v4 configuration
-├── layout.tsx              # Root layout with ThemeProvider
-└── page.tsx                # Main Todo component with all hooks
-```
-
-## Getting Started
-
-1. **Install dependencies**:
-```bash
-npm install
-```
-
-2. **Run the development server**:
-```bash
-npm run dev
-```
-
-3. **Open your browser**:
-Navigate to [http://localhost:3000](http://localhost:3000)
-
 ## How It Works
 
 ### Theme System
@@ -117,20 +91,6 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 - **useMemo**: Filters are only recalculated when todos or filter type changes
 - **useCallback**: Event handlers maintain referential equality across renders
 - **Proper dependencies**: All hooks have correct dependency arrays
-
-## Code Highlights
-
-- **TypeScript**: Full type safety with interfaces for Todo and Filter types
-- **Clean Code**: Simple, readable implementation without over-engineering
-- **Best Practices**: Follows React 19 and Next.js 16 conventions
-- **Tailwind v4**: Uses modern CSS layer system and native cascade layers
-
-## Learn More
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [React Hooks Documentation](https://react.dev/reference/react)
-- [Tailwind CSS v4](https://tailwindcss.com/docs)
-- [TypeScript](https://www.typescriptlang.org/docs/)
 
 ## License
 
